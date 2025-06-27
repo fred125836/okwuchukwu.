@@ -2,6 +2,7 @@ import streamlit as st
 from datetime import datetime
 
 st.set_page_config(page_title="hello", layout="wide" )
+
 hide_streamlit_style = """
     <style>
     #MainMenu {visibility: hidden;}
@@ -9,7 +10,8 @@ hide_streamlit_style = """
     header {visibility: hidden;}
     </style>
     """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+            
 # ---- PAGE SETUP ----
 page_1 = st.Page(
     page="views/about.py",
